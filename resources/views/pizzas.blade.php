@@ -11,7 +11,26 @@
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
     </head>
-    <body class="antialiased">
-        <h1>Welcome Screen</h1>
+    <body>
+        <h1>Pizza House</h1>
+        <h1>The North's Best Pizzas</h1>
+        <br>
+        <br>
+        @if($age > 18)
+            <h1>Over 18</h1>
+        @else
+            <h1>Below 18</h1>
+        @endif
+
+        @unless($age < 18)
+        <h1>Over 18</h1>
+
+        @endunless
+
+        @php
+            echo "Yes"
+        @endphp
+
+        <!-- Stopped at lesson 6 -->
     </body>
 </html>
